@@ -1,12 +1,18 @@
 import React, { Component } from 'react';
 import d3ToSvg from 'd3-svg-to-png';
+import saveSvgAsPng from 'save-svg-as-png';
 import './App.css';
 
 class App extends Component {
 
+  // handleSavePng = () => {
+  //   console.log( 'd3ToSvg: SAVE scale 1' );
+  //   d3ToSvg( '#simpleCircle', 'savedPNG', {scale: 10} );
+  // };
+
   handleSavePng = () => {
-    console.log( 'SAVE scale 10' );
-    d3ToSvg( '#simpleCircle', 'savedPNG', {scale: 10} );
+    console.log( 'saveSvgAsPng: SAVE scale 1' );
+    saveSvgAsPng.saveSvgAsPng( document.getElementById("simpleCircle"), 'savedPNG' );
   };
 
   handleZoomIn = () => {
