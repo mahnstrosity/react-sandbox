@@ -9,7 +9,7 @@
 
 .App-header {
   background-color: #222;
-  height: 150px;
+  height: 60px;
   padding: 20px;
   color: white;
 }
@@ -20,6 +20,22 @@
 
 .App-intro {
   font-size: large;
+}
+
+.svg-div {
+  padding: 20px;
+  text-align: center;
+}
+
+.saveButton {
+  background-color: green;
+  width: 10%;
+  margin: 20px;
+  padding: 5px;
+}
+
+.saveButton:hover{
+  cursor: pointer;
 }
 
 @keyframes App-logo-spin {
